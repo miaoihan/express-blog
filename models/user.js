@@ -1,7 +1,7 @@
 const mongodb = require('../db')
 
 class User {
-  construcor(name, password, mobile){
+  constructor(name, password, mobile){
     this.name = name
     this.password = password
     this.mobile = mobile
@@ -62,6 +62,10 @@ class User {
         });
       });
     });
+  }
+
+  getOne(id, callback){
+
   }
 
 }
